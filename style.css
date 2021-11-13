@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #FAFAFA;
+    width: 100vw;
+    height: 100vh;
+}
+
+.insta-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- HEADER ---- */
+
+header {
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px #c4c4c4;
+    position: fixed;
+    z-index: 200;
+    background-color: #FAFAFA;
+}
+
+.container {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;   
+}
+
+.container nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 25px;
+    width: 200px;
+    margin-left: 100px;
+    border:solid 1px #c4c4c4;
+    border-radius: 2px;
+}
+
+.search input::placeholder{
+    text-align: center;
+}
+
+.icons {
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.header-icon {
+    margin: 0 10px;
+   
+    padding: 12px;
+}
+
+#home {
+    background-image: url("https://github.com/INDESBR/bootcamp_projeto08/blob/main/icons/home.png?raw=true");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+#send {
+    background-image: url("https://github.com/INDESBR/bootcamp_projeto08/blob/main/icons/send.png?raw=true");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+#find {
+    background-image: url("https://github.com/INDESBR/bootcamp_projeto08/blob/main/icons/find.png?raw=true");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+#heart {
+    background-image: url("https://github.com/INDESBR/bootcamp_projeto08/blob/main/icons/heart.png?raw=true");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
+#profile {
+    background-image: url("https://github.com/INDESBR/bootcamp_projeto08/blob/main/profile/profile_photo.png?raw=true");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:100%;
+    border-radius: 100%;
+}
+
+/* --- HEADER ---- */
+
+/* --- MAIN ---- */
+
+.content-container {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    margin-right: 15px;
+}
+
+.content {
+    width: 600px;
+    border: solid 1px #c4c4c4;
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.content img {
+    width: 100%;
+}
+
+/* --- MAIN ---- */
+
+
+/* POST - HEADER */
+
+.content-header {
+    height: 60px;
+    width: 100%;
+}
+
+.post-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 
+    "a b c";
+}
+
+.post-photo {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-photo img {
+    border-radius: 50%;
+    border: solid 1px #C4C4c4;
+    width: 50%;
+}
+
+.post-user-name {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+}
+
+.points {
+    grid-area: c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 100%;
+    margin: 2px;
+}
+
+
+
+/* POST - HEADER */
+
+/* POST - FOOTER */
+
+.interactive{
+   
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.int-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.user-desc {
+   margin: 10px;
+}
+
+/* POST - FOOTER */
+
+/* --- ASIDE ---- */
+
+aside {
+    width: 100%;
+    height: 100%;
+}
+
+.aside-fixed {
+    position: fixed;
+    width: 314px;
+    margin-left: 20px;
+}
+
+.aside-photo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.aside-photo img {
+    width: 60px;
+    border-radius: 100%;
+    border: solid 2px #c4c4c4;
+}
+
+.aside-photo p {
+    margin-left: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.aside-suggestions h2 {
+    margin-top: 20px;
+}
+
+.aside-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.aside-img-container img {
+    width: 40px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.aside-more-container {
+    display: flex;
+}
+
+.aside-more p {
+    margin-right: 120px;
+    font-weight: bold;
+}
+
+.aside-more h2 {
+    color: rgb(0, 174, 255);
+}
+
+/* --- ASIDE ---- */
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    border-top: solid 1px #c4c4c4;
+    padding: 20px;
+    width: 100%;
+}
+
+/* FOOTER */
+
+
+@media (max-width: 650px){
+    
+    .content-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       margin: 10px;
+       padding: 0;
+    }
+
+    .content-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+       width: 100%;
+       
+    }
+    
+    
+
+    aside {
+        display: none;
+       
+    }
+
+    .search {
+        display: none;
+    }
+
+    .container {
+        width: 90vw;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .header-icon {
+        padding: 10px;
+    }
+
+
+   
+
+}
+
+@media (max-width: 180px) {
+    .content-container  {
+        width: 500px;
+        background-color: rgb(255, 0, 0);
+    }
+
+
+}
